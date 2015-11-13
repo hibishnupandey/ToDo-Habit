@@ -1,0 +1,26 @@
+<div>
+<h1>My ToDos</h1>
+<%= link_to 'Add new', new_item_path %>
+</div>
+
+<table  cellpadding="0" cellspacing="0" border="0" class="tbl_main" style="width: 50%">
+  <tr >
+    <th class = "blueCol" style="width:60%">Description</th>
+    <th class = "blueCol" style="width:14%">Status</th>
+    <th class = "blueCol" style="width:13%">Due Date</th>
+    <th class = "blueCol" style="width:13%"></th>
+  </tr>
+
+<% for item in @items %>
+  <tr>
+    <td><%=h item.description %></td>
+    <td><%=h item.status %></td>
+    <td><%=h item.due_date %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+  </tr>
+<% end %>
+</table>
+<%= paginate @items %>
+<br />
+
+

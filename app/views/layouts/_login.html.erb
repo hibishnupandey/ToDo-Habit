@@ -1,0 +1,15 @@
+<div class="header_div"><%=link_to "ToDo Habit", dashboard_index_path%> - make it habit and enjoy</div>
+<div class="login_in_div">
+<% if user_signed_in? %>
+        Hi <%= current_user.email %>! 
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    <% else %>
+        <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Sign In", new_user_session_path  %>
+    <% end %>
+</div>
+
+<br />
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+

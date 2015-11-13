@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ .header_div{
+     text-align: left;
+     float: left;
+     font-weight: bold;
+}
+
+.header_div a{
+     text-decoration: none;
+     font-size: 24px;
+     font-weight: bold;
+     font-family: cursive;
+     color:#003366;
+}
+
+.body_main{
+    width: 100%;
+    padding: 5px;
+    clear: both;
+    margin-left: 20px;
+
+}
+.body_head{
+    width: 100%;
+    padding: 5px;
+}
+ .login_in_div{ 
+     text-align: right;
+     float: right;
+      }
+
+ .login_in_div a{ 
+     color:#473754;
+     text-decoration: underline; }
+ 
+h1 {
+font-size: 18px;
+color: #003366;
+padding: 0px;
+padding-bottom: 4px;
+padding-top: 6px;
+margin: 6px 0px 4px 0px;
+}
+
+h2 {
+font-size: 18px;
+color: #003366;
+padding: 0px;
+padding-bottom: 4px;
+padding-top: 6px;
+margin: 6px 0px 4px 0px;
+}
+
+
+#flash_message, #flash_alert, #flash_notice{
+    color: #000 !important;
+    border: 2px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f0f0f0;
+    font: bold smaller sans-serif;
+    clear:both;
+}
+
+
+#notice {
+color: #000 !important;
+border: 2px solid red;
+padding: 1em;
+margin-bottom: 2em;
+background-color: #f0f0f0;
+font: bold smaller sans-serif;
+}
+
+#columns {
+background: #141222;
+}
+
+
+.tbl_main{
+  border:1px #000 solid;
+  font-size: 11px;
+  width:100%;
+}
+.tbl_main tr td{
+  border:1px #F5F5F5 solid;
+  padding: 2px 5px;
+  vertical-align:middle;
+  text-align: left;
+}
+
+.tbl_main tr th{
+  border:1px #000 solid;
+  padding: 2px 10px;
+  vertical-align:middle;
+    text-align: left;
+}
+
+.report-header{
+width:100%;
+background-color: #a8a8a8;
+color: #fff;
+padding: 3px 10px;
+
+}
+
+tr.blueCol {
+background-color: #a8a8a8;
+color: #fff;
+padding: 3px 10px;
+}
+
+th.blueCol {
+background-color: #a8a8a8;
+color: #fff;
+padding: 3px 10px;
+}
+
+#user_form label
+{
+width: 8em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+#user_form .submit_button
+{
+margin-left: 10em;
+}
+
+textarea{
+    height:30px;
+    width: 240px;
+}
+
+#errorExplanation, #error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2, #error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p, #error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li, #error_explanationul li {
+  font-size: 12px;
+  list-style: square;
+}

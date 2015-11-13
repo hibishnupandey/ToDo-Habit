@@ -1,0 +1,18 @@
+<h1>To-do Item</h1>
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%=h @item.due_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @item.status %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

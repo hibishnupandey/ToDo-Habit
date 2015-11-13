@@ -1,0 +1,21 @@
+<h1>Add New ToDo Item</h1>
+
+<div id="user_form">
+<%= form_for(@item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :due_date %>
+    <%= f.text_field :due_date %>
+  </p>
+  <p>
+    <%= f.submit "Create", :class=>"submit_button" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', items_path %>
+</div>
