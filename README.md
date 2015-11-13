@@ -6,3 +6,6 @@ This is a todo list management application, written in Rails 3.2.5 and MySql. De
 
 The applications four features are defined with cucumber and are successfully executed. The User Interface are simple and cool. ToDo-Habit is ready to help you.
 
+## Dashboard Screenshot
+
+![](https://github.com/hibishnupandey/ToDo-Habit/blob/master/app/assets/images/ToDoHabit_Dashboard.png)
