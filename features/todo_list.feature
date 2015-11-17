@@ -25,13 +25,3 @@ Feature: Todo item management
      When I Update the "item description" to "My Next Task"
      Then I expect message "Item was successfully updated."
 
-@wip
-   Scenario: Edit to do item
-     When I edit task
-     Then I should see task updated message
-     When I go to the dashboard page
-     Then I can not see the completed task
-     When I go to to do index page
-     Then I can see the completed task
-
-     Then I should see "Item was successfully updated."
