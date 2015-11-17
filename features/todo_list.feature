@@ -1,7 +1,7 @@
 Feature: Todo item management
 
    Background:
-    Given I am logged in as a normal user
+     Given I am logged in as a normal user
 
    Scenario: To do list
      Given I have tasks titled TaskABC, TaskDEF
